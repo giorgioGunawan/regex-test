@@ -21,10 +21,3 @@ product_storage_parsed = re.findall(r'products_storage= (.*?);', raw_string.prod
 product_storage_json = json.loads(product_storage_parsed)
 with open('product_storage_json.json', 'w') as f:
     json.dump(product_storage_json, f)
-
-val = "ice cream 200L 200"
-
-x = re.findall("([A-Za-z]+[0-9]|[0-9]+[A-Za-z][A-Za-z0-9]*)", val)
-
-print(x)
-
